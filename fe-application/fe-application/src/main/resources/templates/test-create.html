@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo bài kiểm tra</title>
+    <script th:src="@{/test-create.js}"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+<!--    <link rel="stylesheet" href="../static/style.css">-->
+<!--    <script src="../static/test-create.js"></script>-->
+</head>
+<body onload="start()">
+
+<div class="sidebar">
+    <div id="test-info-div"></div>
+    <button id="test-info-dialog-open-button">Sửa thông tin bài kiểm tra</button>
+    <button onclick="question_dialog_start()">Thêm câu hỏi</button>
+    <button id="submit-test-button">Lưu bài kiểm tra</button>
+
+</div>
+<div style="margin-left:25%">
+    <div id="question-list-div"></div>
+</div>
+
+<dialog class="dialog" id="test-info-dialog">
+    <h3>Thông tin bài kiểm tra</h3>
+    <div class="input-container-div">
+        <label for="test-name-input">Tên bài kiểm tra</label>
+        <input type="text" id="test-name-input">
+    </div>
+    <div class="input-container-div">
+        <label for="time-limit-input">Thời gian làm bài</label>
+        <input type="number" min=1 max=120 id="time-limit-input" >
+    </div>
+    <button id="test-info-dialog-submit-btn">Xác nhận</button>
+</dialog>
+<dialog id="question-dialog"></dialog>
+</body>
+</html>

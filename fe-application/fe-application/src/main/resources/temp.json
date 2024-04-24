@@ -1,0 +1,30 @@
+{
+  "tenBaiKiemTra": "Tên bài kiểm tra",
+  "gioiHanThoiGian": 60,
+  "dsCauHoi": [
+    {
+      "isMultipleChoice": true,
+      "questionText": "Nội dung câu hỏi",
+      "dsCauTraLoi": [
+        {
+          "answerText" : "Nội dung câu trả lời",
+          "isTrue": true
+        },
+        {
+          "answerText" : "Nội dung câu trả lời 2",
+          "isTrue": false
+        }
+      ]
+    },
+    {
+      "isMultipleChoice": true,
+      "questionText": "Nội dung câu hỏi 2",
+      "dsCauTraLoi": [
+        {
+          "answerText" : "Nội dung câu trả lời",
+          "isTrue": true
+        }
+      ]
+    }
+  ]
+}
